@@ -1,0 +1,28 @@
+h1 {
+  text-align: center;
+}
+
+#content {
+  margin: 0 auto;
+  width: 200px;
+}
+
+.ac-search-box {
+  display: block;
+}
+
+.ac-suggestions {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0;
+}
+
+.ac-suggestion {
+  cursor: pointer;
+  height: 20px;
+  overflow-x: hidden;
+}
+
+.ac-suggestion.selected {
+  background-color: lightblue;
+}
