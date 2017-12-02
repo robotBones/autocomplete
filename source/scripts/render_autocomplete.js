@@ -7,5 +7,3 @@ ReactDOM.render(
   <AutoComplete value='ess' max='20' />
   , document.getElementById('content')
 );
-
-document.getElementsByClassName('ac-search-box')[0].focus()

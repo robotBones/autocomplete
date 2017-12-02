@@ -78,8 +78,6 @@ export default class AutoComplete extends Component {
       suggestions: [],
       selected: -1
     });
-
-    document.getElementsByClassName('ac-search-box')[0].focus()
   }
 
   onHover(index) {

@@ -11,6 +11,7 @@ function AutoCompleteInput(props) {
       className='ac-search-box'
       type='text'
       tabIndex='-1'
+      autoFocus
       onChange={(e) => updateInput(e, props)}
       value={props.value} />
   );
