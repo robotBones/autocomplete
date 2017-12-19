@@ -17,15 +17,14 @@ function AutoCompleteDropdown(props) {
         tail = name.slice(termEnd);
         term = props.highlight;
       } else {
-        head = '';
-        tail = '';
-        term = '';
+        return null;
       }
 
       let selectionState = 'unselected';
       if (props.selected === index) {
         selectionState = 'selected'
       }
+
       return (
         <li
           className={`ac-suggestion ${selectionState}`}
@@ -38,6 +37,7 @@ function AutoCompleteDropdown(props) {
     });
   }
 
+  suggestions = _.compact(suggestions);
   return <ul className='ac-suggestions' >{suggestions}</ul>;
 }
 
